@@ -1,0 +1,4 @@
+Flask==1.1.1
+flask-cors==3.0.8
+dataset==1.1.2
+psycopg2==2.8.3
