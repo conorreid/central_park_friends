@@ -22,6 +22,8 @@ class Home extends Component {
     const {friends} = this.state
     return (
       <div className="vote-summary">
+      <h1>Who should get a lovely tour of Central Park?</h1>
+      <h2>It's supposed to be beautiful in November, lots of red leaves.</h2>
         <ol type="1">
           {
             friends.map((friend) => <li>
