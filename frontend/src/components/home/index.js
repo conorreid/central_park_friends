@@ -21,9 +21,15 @@ class Home extends Component {
   render () {
     const {friends} = this.state
     return (
-      <div className="vote-summary">
-      <h1>Who should get a lovely tour of Central Park?</h1>
-      <h2>It's supposed to be beautiful in November, lots of red leaves.</h2>
+      <div 
+        style={{
+          position: 'absolute', left: '50%', top: '50%',
+          transform: 'translate(-50%, -50%)',
+          color: 'white',
+        }}
+        className="vote-summary">
+      <h2>Who should get a lovely tour of Central Park?</h2>
+      <h4>It's supposed to be beautiful in November, lots of red leaves.</h4>
         <ol type="1">
           {
             friends.map((friend) => <li>
@@ -31,8 +37,8 @@ class Home extends Component {
             </li>)
           }
         </ol>
-        <p><a href="/vote">Vote</a></p><br />
-        <a href="/add-friend">Add New Friend</a>
+        <p><a href="/vote" style={{color:"yellow"}}>Vote</a></p>
+        <a href="/add-friend" style={{color:"yellow"}}>Add New Friend</a>
       </div>
     )
   }

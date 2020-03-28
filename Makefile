@@ -27,7 +27,7 @@ reset-database:
 		fi
 
 run-javascript:
-	@npm start --prefix ./frontend
+	@yarn run start
 
 run-python:
 	@python backend/webapp.py

@@ -12,9 +12,14 @@ class AddFriend extends Component {
 
   render () {
     return (
-      <div>
+      <div
+        style={{
+          position: 'absolute', left: '50%', top: '50%',
+          transform: 'translate(-50%, -50%)',
+          color: 'white',
+        }}>
         <AddFriendForm />
-        <a href="/">Results</a>
+        <a href="/" style={{color:"yellow"}}>Results</a>
       </div>
     )
   }
